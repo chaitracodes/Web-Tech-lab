@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback Form</title>
+<style>
+body {font-family:Arial}
+form {width:400px; margin:auto; padding:20px; border:2px solid black}
+input,select,textarea {width:100%; margin:10px 0}
+input[type=radio],input[type=checkbox]{width:auto}
+h2 {text-align:center}
+footer {background-color: #333; color: white; text-align:center; padding:10px; margin-top:50px;}
+</style>
+</head>
+
+<body>
+
+<h2>Student Feedback Form</h2>
+
+<form>
+Name:<input type="text" required>
+Email:<input type="email" required>
+USN:<input type="text">
+
+Year:
+<select>
+<option>1</option><option>2</option><option>3</option><option>4</option>
+</select>
+
+Branch:<br>
+<input type="radio" name="b">CSE
+<input type="radio" name="b">ISE
+<input type="radio" name="b">ECE
+<input type="radio" name="b">Non-Circuit<br><br>
+
+Feedback:
+<textarea></textarea>
+
+<input type="checkbox">Send copy<br><br>
+
+<input type="submit">
+<input type="reset">
+
+</form>
+
+<footer>© JSS Science and Technology University</footer>
+
+</body>
+</html>
