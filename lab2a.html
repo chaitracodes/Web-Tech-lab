@@ -1,48 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Feedback Form</title>
-<style>
-body {font-family:Arial}
-form {width:400px; margin:auto; padding:20px; border:2px solid black}
-input,select,textarea {width:100%; margin:10px 0}
-input[type=radio],input[type=checkbox]{width:auto}
-h2 {text-align:center}
-footer {background-color: #333; color: white; text-align:center; padding:10px; margin-top:50px;}
-</style>
+    <title>Feedback Form</title>
 </head>
-
 <body>
-
 <h2>Student Feedback Form</h2>
-
 <form>
-Name:<input type="text" required>
-Email:<input type="email" required>
-USN:<input type="text">
-
-Year:
-<select>
-<option>1</option><option>2</option><option>3</option><option>4</option>
-</select>
-
-Branch:<br>
-<input type="radio" name="b">CSE
-<input type="radio" name="b">ISE
-<input type="radio" name="b">ECE
-<input type="radio" name="b">Non-Circuit<br><br>
-
-Feedback:
-<textarea></textarea>
-
-<input type="checkbox">Send copy<br><br>
-
-<input type="submit">
-<input type="reset">
-
+    Name: <input type="text" required><br><br>
+    USN: <input type="text"><br><br>
+    Gender:
+    <input type="radio" name="g"> Male
+    <input type="radio" name="g"> Female
+    <br><br>
+    Course:
+    <input type="checkbox"> AI/ML
+    <input type="checkbox"> IoT
+    <br><br>
+    Rating:
+    <select>
+        <option>Excellent</option>
+        <option>Good</option>
+        <option>Average</option>
+    </select>
+    <br><br>
+    Comments:<br>
+    <textarea rows="3" cols="30"></textarea>
+    <br><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
 </form>
-
-<footer>© JSS Science and Technology University</footer>
-
 </body>
 </html>
