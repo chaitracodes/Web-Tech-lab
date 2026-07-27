@@ -1,33 +1,39 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html>
 <head>
-    <title>Feedback Form</title>
+<title> Student feedback form </title>
+<style>
+form{
+    border: 2px solid black;
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+}
+</style>
 </head>
 <body>
-<h2>Student Feedback Form</h2>
+    <center >
+    <h1>Student Feedback Form</h1>
+        <br><br>
 <form>
-    Name: <input type="text" required><br><br>
-    USN: <input type="text"><br><br>
-    Gender:
-    <input type="radio" name="g"> Male
-    <input type="radio" name="g"> Female
-    <br><br>
-    Course:
-    <input type="checkbox"> AI/ML
-    <input type="checkbox"> IoT
-    <br><br>
-    Rating:
-    <select>
-        <option>Excellent</option>
-        <option>Good</option>
-        <option>Average</option>
-    </select>
-    <br><br>
-    Comments:<br>
-    <textarea rows="3" cols="30"></textarea>
-    <br><br>
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
+Name: <input type="text" name="name"> <br><br>
+USN: <input type="text" name="usn"> <br><br>
+Gender:
+<input type="radio" value="g">male
+<input type="radio" value="g">female <br><br>
+course review:
+<select>
+<option>best</option>
+<option>good</option>
+<option>average</option> 
+</select>
+<br><br>
+Feedback:<br>
+<textarea rows="4" col="30" ></textarea>
+<br><br>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
 </form>
+</center>
 </body>
 </html>
