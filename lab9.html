@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>hi</title>
+</head>
+<body>
+user id:<input type="text" id="uid">
+name: <input type="text" id="name">
+password: <input type="password" id="pass">
+email: <input type="text" id="email">
+<button onclick="validate()">submit</button>
+<script>
+function validate(){
+var uid = document.getElementById("uid").value;
+var name = document.getElementById("name").value;
+var pass = document.getElementById("pass").value;
+var email = document.getElementById("email").value;
+
+if(uid.length<5 || uid.length>12){
+alert("enter btw 5 to 12 char");
+return;}
+
+var namePattern = /^[A-Za-z ]+$/;
+if(!namePattern.test(name) || name.length<15){
+alert("enter name");
+return;}
+
+var passPattern=/^(?=.*[A-Z])(?=.*[!@#$%^&]).{8,}$/;
+if(!passPattern.test(pass)){
+alert("password");
+return;}
+
+if(email.indexOf("@")==-1 ||email.indexOf(".")==-1){
+alert("enter email");
+return;}
+alert("reg successful");
+}
+</script>
+</body>
+</html>
